@@ -1,6 +1,6 @@
-const SidebarOption = ({Icon, title, number}) => {
+const SidebarOption = ({Icon, title, number, selected}) => {
   return (
-    <div className="SidebarOption">
+    <div className={ `SidebarOption ${selected && 'SidebarOption--active'}` }>
       <Icon />
       <h3>{title}</h3>
       <p>{number}</p>

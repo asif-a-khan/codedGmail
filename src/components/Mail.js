@@ -1,0 +1,9 @@
+const Mail = () => {
+  return (
+    <div className="Mail">
+      
+    </div>
+  )
+}
+
+export default Mail
