@@ -11,7 +11,6 @@ const SendMail = () => {
   const { register, handleSubmit, watch, errors } = useForm()
 
   const onSubmit = (data) => {
-    console.log(data)
     db.collection('emails').add({
       to: data.to,
       subject: data.subject,
