@@ -37,3 +37,7 @@
   display: flex;
   padding-right: 20px;
 }
+
+.MuiAvatar-root, .MuiAvatar-circle {
+  cursor: pointer;
+}

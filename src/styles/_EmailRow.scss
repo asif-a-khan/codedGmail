@@ -1,6 +1,6 @@
 .EmailRow {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
   align-items: center;
   height: 50px;
   border-bottom: 1px solid whitesmoke;
@@ -15,17 +15,17 @@
 .EmailRow__options {
   display: flex;
   align-items: center;
-  flex: 0.08;
+  flex: 0.1;
 }
 
 .EmailRow__title {
   font-size: 14px;
-  // flex: 0.1;
+  // flex: 1;
 }
 
 .EmailRow__message {
   display: flex;
-  flex: 0.8;
+  flex: 0.5;
   align-items: center;
   font-size: 14px;
   h4 {
@@ -46,4 +46,17 @@
   padding-right: 15px;
   font-size: 12px;
   font-weight: bold;
+  justify-self: end;
+}
+
+@media only screen and (max-width: 1400px) {
+  .EmailRow {
+    grid-template-columns: 1.5fr 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .EmailRow {
+    grid-template-columns: 1.75fr 1fr 1fr;
+  }
 }
